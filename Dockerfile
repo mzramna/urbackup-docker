@@ -2,9 +2,9 @@ FROM debian:stable
 MAINTAINER Claus Strasburger <claus@strasburger.de>
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV VERSION 2.1.20
-ENV FILE urbackup-server_${VERSION}_amd64.deb
-ENV URL https://www.urbackup.org/downloads/Server/${VERSION}/debian/stable/${FILE}
+ENV VERSION 2.4.11
+ENV FILE urbackup-server_${VERSION}_armhf.deb
+ENV URL https://www.urbackup.org/downloads/Server/${VERSION}/${FILE}
 
 ADD ${URL} /root/${FILE}
 
